@@ -4,8 +4,8 @@ def FizzBuzz(N):
     fifteen = ((2*15 + 15*(N//15-1))/2)*(N//15)
 
     three -= fifteen
-    five -= fifteen
-    result = three + five
+    five -= fifteen     # Удаляем пересечение из обоих сумм
+    result = three + five  
 
     return int(result)
 
