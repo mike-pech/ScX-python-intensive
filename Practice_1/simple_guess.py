@@ -7,6 +7,3 @@ def guess_root(number: int) -> int | str:
     return None
 
 print(guess_root(n) if guess_root(n) is not None else "Сложна, не могу")
-
-# ----------------------------------------------------------------------
-# А теперь усложним задачу! С фиксированным шагом и проверкой на эпсилон 
