@@ -9,7 +9,7 @@ def retreive_racer_data(race_data: RACE_DATA) -> dict[dict]:
 def convert_time(seconds: int) -> str:
     return f"{seconds//3600:02d}:{seconds%3600//60:02d}:{seconds%3600%60:02d}"      # :02d -- выводить всегда 2 цифры (даже если частное однозначно)
 
-def display_finish_message(race_data: RACE_DATA):
+def display_finish_message(race_data: RACE_DATA) -> None:
     sorted_racers = retreive_racer_data(race_data)
 
     print(f"Выиграл - {sorted_racers.get(1).get('RacerName')}!!! Поздравляем!!")
