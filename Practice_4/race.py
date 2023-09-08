@@ -13,7 +13,7 @@ def display_finish_message(race_data: RACE_DATA):
     sorted_racers = retreive_racer_data(race_data)
 
     print(f"Выиграл - {sorted_racers.get(1).get('RacerName')}!!! Поздравляем!!")
-    print("_"*15, "\n")
+    print("_"*40, "\n")
     print("Первые три места: \n\n")
 
     for i in range(1, 4):
